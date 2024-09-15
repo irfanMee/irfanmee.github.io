@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+</html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>HarmonyCloak</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <!-- Google fonts - Roboto-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+  <!-- owl carousel-->
+  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/favicon.png">
+
+
+  <link rel="stylesheet" href="css/mystyle.css">
+
+  <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<body>
+  <div id="all">
+    <div class="container-fluid">
+       <div class="row row-offcanvas row-offcanvas-left">
+      <!--   <b>* SIDEBAR <b>*-->
+              <div id="sidebar" class="col-md-4 col-lg-3 sidebar-offcanvas">
+                <div class="sidebar-content">
+                  <p>
+                    <a href="index.html"><img src="img/mosis_logo_new.png" class="image rounded img-fluid"></a>
+                  </p>
+                  <p class="sidebar-p" style="font-size:14px;"><font color="black"><b>MoSIS Lab</b></font> <font color="black">is under the</font> <font color="#FF8200"><a target="_blank" href="http://www.eecs.utk.edu/" class="conf">Department of Electrical Engineering and Computer Science</a></font> <font color="black">at the</font> <font color="#FF8200"><a href="http://www.utk.edu/" target="_blank" class="conf">University of Tennessee, Knoxville</a></font>.</p>
+                  <hr>
+                  <ul class="sidebar-menu">
+                      <!-- Link-->
+                      <li class="sidebar-item"><a href="index.html" class="sidebar-link">Home</a></li>
+                      <!-- Link-->
+                      <li class="sidebar-item"><a href="members.html" class="sidebar-link">Members</a></li>
+                      <!-- Link-->
+                      <li class="sidebar-item"><a href="publications.html" class="sidebar-link">Publications</a></li>
+                      <!-- Link-->
+                      <!--<li class="sidebar-item"><a href="projects.html" class="sidebar-link">Projects</a></li>-->
+                      <!-- Link-->
+                      <li class="sidebar-item"><a href="media.html" class="sidebar-link">Media Coverage</a></li>
+
+                      <li class="sidebar-item"><a target="_blank" href="https://www.youtube.com/channel/UCSERJqvaImJCkAbfQCG9Wzg" class="sidebar-link">YouTube Channel</a></li>
+                      <!-- Link-->
+                      <li class="sidebar-item"><a href="joinus.html" class="sidebar-link">Join Us</a></li>
+                  </ul>
+                  <hr>
+                  <!--
+                  <p class="social"><a href="#" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" data-animate-hover="pulse" class="external gplus">
+                  <i class="fa fa-google-plus"></i></a><a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="external instagram">
+                  <i class="fa fa-instagram"></i></a><a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></p>-->
+                  <div class="copyright text-center text-md-left">
+                    <p><a href="https://tickle.utk.edu/"><img src="img/utk-logo.gif" alt="utklogo" width="70%" align="middle" class="image rounded img-fluid"></a></p>
+                    <p class="credit">Copyright &copy; 2023. MoSIS Lab @ UTK All rights reserved.</p>
+                  </div>
+                </div>
+              </div>
+              <!--   <b>* SIDEBAR END <b>*  -->
+        <!--   <b>* DETAIL <b>*-->
+
+        <div  class="col-md-8 col-lg-9 content-column white-background">
+
+          <div class="small-navbar d-flex d-md-none">
+            <button type="button" data-toggle="offcanvas" class="btn btn-outline-primary"> <i class="fa fa-align-left mr-2"></i>Menu</button>
+            <h1 class="small-navbar-heading"> <a href="index.html">MoSIS Lab </a></h1>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="content-column-content">
+<!--                 <h1 style="text-align: center;" class="pagetitle"><u>AdvPulse: Universal, Synchronization-free, and Targeted Audio Adversarial Attacks via Subsecond Perturbations</u></h1> -->
+
+<h1 class="pagetitle"><u>HarmonyCloak: Making Music Unlearnable for Generative AI</u></h1>
+                <!--<p style="text-align: center;">This site is still under constrution. More audio/video samples will be uploaded soon.</p>-->
+
+                <hr>
+                <h1 class="pagesubtitle">Introduction</h1>
+                <!-- Serving as a major role in human interactions, the face conveys both verbal and non-verbal information, such as intention, engagement, and emotion, which would allow a more credible interaction loopback.  -->
+                In recent years, the rapid advancements in generative AI have transformed a wide range of domains, from generating realistic images to creating coherent text. Recently, these technologies have set foot in the music industry, enabling AI systems to produce sophisticated compositions that rival human creativity. However, this progress has also raised critical concerns about the unauthorized use and exploitation of musicians' original works. As generative AI models learn from vast databases of music, there is an increasing risk of unintentional infringement on copyrighted material, threatening both the livelihoods and artistic integrity of musicians.
+
+                In response to this emerging challenge, we propose HarmonyCloak, the first defensive framework designed to protect musicians' intellectual property by making their music unlearnable by AI models. By embedding imperceptible, error-minimizing noise into the music, HarmonyCloak effectively prevents AI systems from extracting meaningful patterns, all while preserving the perceptual quality of the music for human listeners. Our approach leverages time-dependent optimization constraints and psychoacoustic principles to ensure that the protective noise remains undetectable to the human ear.
+
+                Extensive experiments on state-of-the-art generative AI models, including MuseGAN, SymphonyNet, and MusicLM, demonstrate the effectiveness of HarmonyCloak across both white-box and black-box scenarios. By shifting the focus from visual data protection to audio protection, this framework opens new possibilities for safeguarding creative works in the music industry without compromising their artistic essence.
+
+              
+                <p><br></p>
+
+                <h4>Threat of Generative AI Aginst Musicians</h4>
+                <ul >
+                  <li>As generative AI rapidly evolves, it presents a growing threat to musicians and their intellectual property. AI models, which can now produce coherent and high-quality music, often rely on vast datasets of publicly available music scraped from online platforms and streaming services. While this technology offers exciting new opportunities, it also introduces significant risks, particularly regarding copyright infringement and the unauthorized use of original compositions.</li>
+                  <li>The threat escalates as attackers—such as AI model owners or companies—may scrape music data from the web, using it to train generative models that replicate or mimic the protected compositions. As a result, the risk of copyright violations becomes more pronounced, and the need for robust protective measures becomes paramount.
+                  <li>The issue is further compounded by these companies profiting from the generated music, while the original creators receive no monetary compensation or societal recognition for their contributions. Armed with powerful AI technologies and unrestricted access to publicly available music, corporations can systematically undermine the rights of musicians.</li>
+                </ul >
+
+                <center>
+                  <img src="research/harmonycloak/threat_model.png" alt="scenarios" width="75%" height="45%" class="center">
+                  <p><br></p>
+                  <p><b>Figure 1: llustration of the threat model where the attacker
+                    scrapes music posted online by victim musicians to train
+                    their music generative models.</b></p>
+                </center>
+
+                <p><br></p>
+
+                <h4>Human Auditory Perception and Psychoacoustic Modeling</h4>
+
+                The human auditory system is a remarkable sensory apparatus capable of detecting and interpreting sounds across a vast range of frequencies and intensities. However, our hearing is not uniform across all frequencies. Sounds are perceived differently depending on their frequency and loudness, with the sensitivity of the ear varying significantly. <b>Psychoacoustic models</b> have provided detailed insights into how humans perceive sound, including the <b>hearing threshold</b>, which represents the minimum sound pressure level (SPL) required for a tone to be detected at a specific frequency. As shown in Figure 2, the hearing threshold is lower at midrange frequencies (typically around 1–5 kHz), which means humans are more sensitive to sounds within this range. In contrast, at very low (e.g., below 100 Hz) or very high frequencies (e.g., above 10 kHz), sounds must be significantly louder to be heard.
+
+                This phenomenon is linked to the physical structure of the ear, particularly the cochlea, where different parts are more responsive to specific frequency ranges. As a result, humans are naturally more attuned to midrange frequencies, which include many speech and musical tones. Sounds that fall below this frequency-dependent hearing threshold are imperceptible, meaning they are effectively silent to human listeners, even if they exist physically as sound waves.
+
+                In addition to the frequency-dependent hearing threshold, human auditory perception is influenced by <b>frequency masking</b> and <b>temporal masking</b>, both of which are integral to psychoacoustic modeling. <b>Frequency masking</b> occurs when a louder sound, known as the <b>masker</b>, at one frequency elevates the hearing threshold of nearby frequencies. This effect, as shown in Figure 2, forms a <b>critical bandwidth</b> around the masker frequency where quieter sounds become inaudible, even if they would normally be detectable. For instance, a loud tone at 1 kHz can mask quieter tones at 900 Hz or 1.1 kHz, depending on its intensity. This masking effect creates a bell-shaped curve, as illustrated in the figure, where sounds falling within the masked region are rendered imperceptible, even if they exceed the usual hearing threshold.
+
+                <b>Temporal masking</b> further expands on this concept by considering the impact of sound over time. It occurs when louder sounds obscure quieter sounds that occur immediately before (<b>pre-masking</b>) or after (<b>post-masking</b>) the louder sound. Temporal masking highlights the dynamic nature of auditory perception, where even brief, loud sounds can make quieter sounds hard to detect, impacting both real-time audio perception and post-processing tasks.
+
+                <center>
+                  <img src="research/harmonycloak/contour_test.png" alt="scenarios" width="75%" height="45%" class="center">
+                  <p><br></p>
+                  <p><b>Figure 2: Illustration of frequency masking in psychoacoustic modeling (log-scaled x-axis: 20 Hz — 16 kHz).</b></p>
+                </center>
+
+                <p><br></p>
+                
+
+                <h4>What is HarmonyCloak?</h4>
+                <b>HarmonyCloak</b> is a revolutionary system designed to protect musicians from the unauthorized exploitation of their work by generative AI models. At its core, HarmonyCloak functions by introducing imperceptible, error-minimizing noise into musical compositions. While the music sounds exactly the same to human listeners, the embedded noise confounds AI models, making the music unlearnable and thus protecting it from being replicated or mimicked. For example, a beautifully composed symphony may remain pristine to the human ear, but to an AI, the "Cloaked" version appears as a disorganized, unlearnable dataset. As a result, when an AI model attempts to generate music in the style of the original composer, the output will be incoherent, preventing the model from capturing the essence of the protected composition.
+                <p></p>
+                But why does HarmonyCloak work so effectively? Why can’t an attacker simply remove these subtle alterations by applying common digital manipulations—such as converting the file, compressing it, or adding noise? The answer lies in the nature of HarmonyCloak: it’s not a simple additive noise or a hidden signal that can be easily filtered out. The imperceptible noise added by HarmonyCloak is carefully crafted to remain below the human hearing threshold, blending seamlessly with the music. This noise is masked by the music itself, making it undetectable to the human ear while still disrupting the AI’s ability to learn from the data. Think of it as a new, invisible layer to the music—one that only AI models can detect but humans cannot. This protective layer is dynamically created, adapting to the characteristics of each individual piece of music. And because the dimensions HarmonyCloak operates on vary with every song, generative AI models cannot easily reverse-engineer or bypass the protective noise without knowing the specific parameters for each track.
+                <p></p>
+                HarmonyCloak doesn't compromise on sound quality; it preserves the artist’s original intent while preventing AI from learning from the music. Whether it’s classical, jazz, or modern electronic compositions, HarmonyCloak ensures that artists’ intellectual property remains safe in an era of rapid advancements in AI music generation. Keep reading to discover how HarmonyCloak works, and explore the results of our experiments across multiple state-of-the-art AI music models like MuseGAN, SymphonyNet, and MusicLM.
+
+                <p><br></p>
+
+                <h4>HarmonyCloak Design</h4>
+                HarmonyCloak is designed to protect musicians' works from unauthorized use by generative AI models in two main scenarios: <b>white-box</b> and <b>black-box</b> settings.
+                <p></p>
+                In the <b>white-box</b> setting, we have detailed knowledge of the generative model that will be used to train on the music, including access to its architecture, parameters, and even the dataset it might use. This allows HarmonyCloak to create highly targeted defenses. The system works by embedding imperceptible noise into the music that interferes with the AI model’s learning process. This noise is carefully crafted to align with the frequency masking principle, where the noise is hidden within the same frequency range as the dominant musical notes, ensuring it is inaudible to the human ear. In addition, temporal masking is applied, meaning the noise is dynamically adjusted to follow changes in tempo and volume, making sure it blends seamlessly with the natural flow of the music.
+                <p></p>
+                The noise in the white-box setting is customized not only for the entire track but also for each individual instrumental layer. For instance, different instruments like a piano or a violin have distinct frequency ranges and timbres. HarmonyCloak analyzes each track separately, ensuring that the noise is tailored to the unique characteristics of each instrument, making the overall defense more robust.
+                <p></p>
+                Additionally, HarmonyCloak is designed to remain effective even after the music goes through lossy compression, such as converting to MP3, a common format used in music distribution. By embedding the noise at levels that are masked by the dominant musical notes, the protective effects persist even after compression. This ensures that AI models trained on compressed versions of the music are still unable to extract useful patterns.
+                <p></p>
+                In the <b>black-box</b> setting, we do not know the specific generative model that will be used, and we don’t have access to the model’s internal workings. To handle this, HarmonyCloak uses a strategy inspired by meta-learning, which is designed to improve the cross-model transferability of the protective noise. In simple terms, this means the system generates noise that is effective against a variety of different AI models, even ones it has never encountered before. By training the protective noise on several surrogate models and refining it iteratively, HarmonyCloak ensures that the music remains unlearnable, even by models we don’t know or can’t directly interact with.
+                
+                <center>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm"><img src="research/harmonycloak/spectrogram1.png" alt="scenarios" width="75%" height="45%" class="center"></div>
+                      <div class="col-sm"><img src="research/harmonycloak/spectrogram2.png" alt="scenarios" width="75%" height="45%" class="center"></div>
+                      <div class="col-sm"><img src="research/harmonycloak/spectrogram3.png" alt="scenarios" width="75%" height="45%" class="center"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm"><i>Clean Music</i></div>
+                      <div class="col-sm"><i>Defensive Noise</i></div>
+                      <div class="col-sm"><i>Cloaked Music</i></div>
+                    </div>
+                  </div>
+                  <p><br></p>
+                  <p><b>Figure 3: Illustration of the spectrogram of the music and the added defensive noise.</b></p>
+                </center>
+
+                <p><br></p>
+
+                <hr>
+                <h1 class="pagesubtitle">Music Samples</h1>
+                <h3>Original and Cloaked Music</h3>
+                <center>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm"><i>Original Music</i></div>
+                      <div class="col-sm"><i>Original Music</i></div>
+                      <div class="col-sm"><i>Original Music</i></div>
+                    </div>
+  
+                    <div class="row">
+                      <div class="col-sm">
+                        <audio controls="" style="width: 250px;">
+                          <source src="research/harmonycloak/Clean.mp3" type="audio/wav">
+                        </audio>
+                      </div>
+
+                      <div class="col-sm">
+                        <audio controls="" style="width: 250px;">
+                          <source src="research/harmonycloak/Clean_2.mp3" type="audio/wav">
+                        </audio>
+                      </div>
+  
+                      <div class="col-sm">
+                        <audio controls="" style="width: 250px;">
+                          <source src="research/harmonycloak/Clean_1.mp3" type="audio/wav">
+                        </audio>
+                      </div>
+                    </div>
+  
+                    <div class="row">
+                      <div class="col-sm"><i>Cloaked Music</i></div>
+                      <div class="col-sm"><i>Cloaked Music</i></div>
+                      <div class="col-sm"><i>Cloaked Music</i></div>
+                    </div>
+  
+                    <div class="row">
+                      <div class="col-sm">
+                        <audio controls="" style="width: 250px;">
+                          <source src="research/harmonycloak/white-box.mp3" type="audio/wav">
+                        </audio>
+                      </div>
+
+                      <div class="col-sm">
+                        <audio controls="" style="width: 250px;">
+                          <source src="research/harmonycloak/white-box_2.mp3" type="audio/wav">
+                        </audio>
+                      </div>
+  
+                      <div class="col-sm">
+                        <audio controls="" style="width: 250px;">
+                          <source src="research/harmonycloak/white-box_1.mp3" type="audio/wav">
+                        </audio>
+                      </div>
+                    </div>
+  
+  
+                  </div>
+                  </center>
+                  
+                  <h3>AI Generated Music</h3>
+                  <h4>Generated Music with MuseGAN Model</h4>
+                  <center>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm"><i>Trained on Clean Music</i></div>
+                        <div class="col-sm"><i>Trained on Clean Music</i></div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-sm">
+                          <audio controls="" style="width: 250px;">
+                            <source src="research/harmonycloak/Clean-muse.mp3" type="audio/wav">
+                          </audio>
+                        </div>
+    
+                        <div class="col-sm">
+                          <audio controls="" style="width: 250px;">
+                            <source src="research/harmonycloak/Clean-muse_1.mp3" type="audio/wav">
+                          </audio>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-sm"><i>Trained on Cloaked Music</i></div>
+                        <div class="col-sm"><i>Trained on Cloaked Music</i></div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-sm">
+                          <audio controls="" style="width: 250px;">
+                            <source src="research/harmonycloak/museGAN_gen_white-box.mp3" type="audio/wav">
+                          </audio>
+                        </div>
+    
+                        <div class="col-sm">
+                          <audio controls="" style="width: 250px;">
+                            <source src="research/harmonycloak/museGAN_gen_white-box_1.mp3" type="audio/wav">
+                          </audio>
+                        </div>
+                      </div>
+    
+    
+                    </div>
+                    </center>
+               <h4>Generated Music with MusicLM Model</h4>
+                  <center>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm"><i>Trained on Clean Music</i></div>
+                        <div class="col-sm"><i>Trained on Clean Music</i></div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-sm">
+                          <audio controls="" style="width: 250px;">
+                            <source src="research/harmonycloak/Clean_MusicLM.mp3" type="audio/wav">
+                          </audio>
+                        </div>
+    
+                        <div class="col-sm">
+                          <audio controls="" style="width: 250px;">
+                            <source src="research/harmonycloak/Clean_MusicLM_1.mp3" type="audio/wav">
+                          </audio>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-sm"><i>Trained on Cloaked Music</i></div>
+                        <div class="col-sm"><i>Trained on Cloaked Music</i></div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-sm">
+                          <audio controls="" style="width: 250px;">
+                            <source src="research/harmonycloak/musicLM_gen_white_box.mp3" type="audio/wav">
+                          </audio>
+                        </div>
+    
+                        <div class="col-sm">
+                          <audio controls="" style="width: 250px;">
+                            <source src="research/harmonycloak/musicLM_gen_white_box_1.mp3" type="audio/wav">
+                          </audio>
+                        </div>
+                      </div>
+    
+    
+                    </div>
+                    </center>
+
+
+                  <h4>Generated Music with SymphonyNet Model</h4>
+                  <center>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm"><i>Trained on Clean Music</i></div>
+                        <div class="col-sm"><i>Trained on Clean Music</i></div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-sm">
+                          <audio controls="" style="width: 250px;">
+                            <source src="research/harmonycloak/Clean_SymphonyNet.mp3" type="audio/wav">
+                          </audio>
+                        </div>
+    
+                        <div class="col-sm">
+                          <audio controls="" style="width: 250px;">
+                            <source src="research/harmonycloak/Clean_SymphonyNet_1.mp3" type="audio/wav">
+                          </audio>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-sm"><i>Trained on Cloaked Music</i></div>
+                        <div class="col-sm"><i>Trained on Cloaked Music</i></div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-sm">
+                          <audio controls="" style="width: 250px;">
+                            <source src="research/harmonycloak/SymNet_gen_white-box.mp3" type="audio/wav">
+                          </audio>
+                        </div>
+    
+                        <div class="col-sm">
+                          <audio controls="" style="width: 250px;">
+                            <source src="research/harmonycloak/SymNet_gen_white-box_1.mp3" type="audio/wav">
+                          </audio>
+                        </div>
+                      </div>
+    
+    
+                    </div>
+                    </center>
+                    
+
+
+                    <hr>
+                    <h1 class="pagesubtitle">Contact</h1>
+                    <h4>Team Members</h4>
+                    <ul >
+
+                      <li><a href="http://web.eecs.utk.edu/~ywu83/">Syed Irfan Ali Meerza</a> - University of Tennessee, Knoxville</li>
+                      <li><a href="https://lichao-sun.github.io/">Lichao Sun</a> - Lehigh University</li>
+                      <li><a href="https://web.eecs.utk.edu/~jliu/">Jian Liu</a> - University of Tennessee, Knoxville</li>
+
+                    </ul >
+
+                    <h4>Paper</h4>
+                    <ul >
+                      <li>For more information, please refer to our <a href="https://mosis.eecs.utk.edu/publications/wu2021bioface.pdf">paper</a> (in proceedings of <a href="https://www.sigmobile.org/mobicom/2021/">ACM MobiCom 2021</a>).</li>
+                    </ul >
+
+
+<!--                 <h4>Paper Presentation</h4>
+                <center>
+                  <center>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hdPrfe1QBRI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </center>
+                </center>
+ -->
+                <hr>
+                <center>
+                <div class="row">
+                  <div class="col">
+                    <img src="research/bioface/ut-logo.png" alt="scenarios" width="200" height="50">
+                  </div>
+                  <div class="col">
+                    <img src="research/bioface/utalogo.png" alt="scenarios" width="170" height="50">
+                  </div>
+                </div>
+                </center>
+
+                </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+  </div>
+  <!-- JavaScript files-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper.js/umd/popper.min.js"> </script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="vendor/masonry-layout/masonry.pkgd.min.js"></script>
+  <script src="js/front.js"></script>
+
+<!-- Default Statcounter code for Mosis.eecs.utk.edu
+https://mosis.eecs.utk.edu -->
+<script type="text/javascript">
+var sc_project=12057061;
+var sc_invisible=1;
+var sc_security="f9bbddf2";
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12057061/0/f9bbddf2/1/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+</body>

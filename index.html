@@ -1,32 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Background Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Block Layout</title>
+  <link rel="stylesheet" href="style_1.css">
 </head>
+
 <body>
-    <div class="bio">
-        <div class="text-content">
-           <h4>welcome</h4>
-            <h1>Hi, I'm <span class="name">Irfan</span>, a PhD student and AI researcher passionate about ensuring fairness, protecting privacy, and enhancing security in AI systems</h1>
-            <div class="social-icons">
-                <a href="#"><img src="figure/github-logo.png" alt="GitHub"></a> 
-                <a href="#"><img src="figure/business.png" alt="LinkedIn"></a>
-                <a href="#"><img src="figure/google-scholar.svg" alt="Scholar"></a>
-                <a href="#"><img src="figure/instagram.svg" alt="Instagram"></a>
-            </div>
-        </div>
-        <div class="avatar">
-            <img src="figure/irfan.png" alt="Irfan Avatar">
+  <div class="container">
+    <!-- Main block (welcome section) -->
+    <div class="block main-block">
+        <div class="block-main-block-text">
+            <h4>welcome</h4>
+             <h1>Hi, I'm <span class="name">Irfan</span>, a PhD student and AI researcher passionate about ensuring fairness, protecting privacy, and enhancing security in AI systems</h1>
+             <div class="social-icons">
+                 <a href="https://github.com/irfanMee" target="_blank"><img src="figure/github-logo.png" alt="GitHub"></a> 
+                 <a href="https://www.linkedin.com/in/irfan-meerza-2b6737b5/" target ="_blank"><img src="figure/business.png" alt="LinkedIn"></a>
+                 <a href="https://scholar.google.com/citations?user=GYKWP3oAAAAJ&hl=en&authuser=3&oi=ao"  target="_blank"><img src="figure/google-scholar.svg" alt="Scholar"></a>
+                 <a href="https://www.instagram.com/irfanmeerza/", target="_blank"><img src="figure/instagram.svg" alt="Instagram"></a>
+             </div>
+         </div>
+         <div class="avatar">
+             <img src="figure/irfan.png" alt="Irfan Avatar">
+         </div>
+    </div>
+
+    <!-- About block -->
+    <div class="block-about">
+        <div class="block-about-block">
+            <h3>News</h3>
+            <li>[September 2024] Our paper "HarmonyCloak: Making Music Unlearnable for Generative AI" has been accepted to IEEE S&P/Oakland 2025!</li>
+            <li>[May 2024] Our paper "ConFUSE: Confusion-based Federated Unlearning with Salience Exploration" has been accepted to ISVLSI'24!</li>
+            <li>[April 2024] Our paper "EAB-FL: Exacerbating Algorithmic Bias Through Model Poisoning Attacks in Federated Learning" has been accepted to IJCAI'24!</li>
+
+          </div>
+    </div>
+
+    <!-- Contact block -->
+    <div class="block-publications">
+        <div class="block-about-block">
+            <h3>Selected Publications</h3>
+            <li ><a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600a085/21B7RrbCU12" target="_blank"><span class="conf">[IEEE S&P/Oakland'25]</span> HarmonyCloak: Making Music Unlearnable for Generative AI <span class="conf">(14.3%)</span></a><a href="https://mosis.eecs.utk.edu/harmonycloak.html", target="_blank"> <span class="proj">[Project Website]</span></a></li>
+            <li ><a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600a085/21B7RrbCU12" target="_blank"><span class="conf">[IJCAI'24]</span> EAB-FL: Exacerbating Algorithmic Bias Through Model Poisoning Attacks in Federated Learning <span class="conf">(14.1%)</span></a></li>
+            <li ><a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600a085/21B7RrbCU12" target="_blank"><span class="conf">[ISVLSI'24]</span> ConFUSE: Confusion-based Federated Unlearning with Salience Exploration</a></li>
+            <li ><a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600a085/21B7RrbCU12" target="_blank"><span class="conf">[ACM AsiaCCS'23]</span>  RecUP-FL: Reconciling Utility and Privacy in Federated Learning via User-configurable Privacy Defense <span class="conf">(16%)</span></a></li>
+            <li ><a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600a085/21B7RrbCU12" target="_blank"><span class="conf">[IEEE EMBC'22]</span>  Fair and Privacy-Preserving Alzheimer's Disease Diagnosis Based on Spontaneous Speech Analysis via Federated Learning</a></li>
+            <li ><a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600a085/21B7RrbCU12" target="_blank"><span class="conf">[IEEE EMBC'21]</span>  Precise warfarin management through personalized modeling and control with limited clinical data</a></li>
+            <li ><a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600a085/21B7RrbCU12" target="_blank"><span class="conf">[AMAAEA'21]</span>  Food insecurity through machine learning lens: identifying vulnerable households</a></li>
+
+            </span></a></li>
+
+          </div>
+    </div>
+
+    <!-- Time zone block -->
+    <div class="block-media">
+        <div class="block-about-block">
+            <h3>Media</h3>
+            <li ><a href="https://www.eecs.utk.edu/lius-tool-makes-songs-unlearnable-ai/" target="_blank">UTK News: Liu’s New Tool Makes Songs Unlearnable to Generative AI - October 2024</a></li>
+            <li><a href="https://www.msn.com/en-us/news/technology/new-tool-makes-songs-unlearnable-to-generative-ai/ar-AA1sNU7n" target="_blank">Microsoft Network: New tool makes songs unlearnable to generative AI - Octorber 2024</a></li>
+            <li><a href="https://www.futura-sciences.com/tech/breves/technologie-bonne-nouvelle-droits-artistes-harmonycloak-empoisonne-ia-proteger-musique-10143/" target="_blank">	FURTURA: Bonne nouvelle pour les droits des artistes : HarmonyCloak empoisonne les IA pour protéger la musique ! - Octorber 2024</a></li>
+            <li><a href="https://ndd.news/proteger-sa-musique-des-ia-cest-possible/" target="_blank">	NDD.news: Protéger sa musique des IA, c’est possible ! - Octorber 2024</a></li>
+            <li><a href="https://newatlas.com/ai-humanoids/harmonycloak-music-protection-ai/" target="_blank">	New Atlas: HarmonyCloak slips silent poison into music to corrupt AI copies - Octorber 2024</a></li>
+            <li><a href="https://techxplore.com/news/2024-10-tool-songs-unlearnable-generative-ai.html" target="_blank">	TechXplore: New tool makes songs unlearnable to generative AI - Octorber 2024</a></li>
+          </div>
+    </div>
+
+    <!-- Freelancer status block -->
+    <div class="block">
+        <div class="block-about-block">
+            <h4>Misc.</h4>
+            <p>I love music (rock, classical) and play piano during leisure time. I am also a landscape photographer, you’ll often find me exploring the mountains during holidays.</p>
         </div>
     </div>
-    <div class="news">
 
+    <!-- Map and Blog row -->
+    <div class="flex-container">
+      <div class="block map-block" style="flex: 1; margin-right: 0.5rem;">
+        <div class="time-block">
+            <h3>Time zone</h3>
+            <p id="time-display">Loading...</p>
+          </div>
+          <script>
+            function updateTime() {
+              const options = { timeZone: 'EST', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+              const timeString = new Intl.DateTimeFormat('en-US', options).format(new Date());
+              document.getElementById('time-display').textContent = `${timeString} EST`;
+            }
+        
+            setInterval(updateTime, 1000);
+            updateTime();
+          </script>
+          </div>
+      <div class="block blog-block" style="flex: 1; margin-left: 0.5rem;">
+        <h4>Blog</h4>
+      </div>
     </div>
-
+  </div>
 </body>
 </html>

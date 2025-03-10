@@ -78,30 +78,19 @@
     <div class="flex-container">
       <div class="block map-block" style="flex: 1; margin-right: 0.5rem;">
         <div class="time-block">
-          <h3>Time zone</h3>
-          <p id="time-display">Loading...</p>
-        </div>
-        <script>
-          function updateTime() {
-            const options = { 
-              timeZone: 'America/New_York', // Automatically adjusts for DST
-              weekday: 'long',              // e.g., Monday
-              year: 'numeric',              // e.g., 2025
-              month: 'long',                // e.g., March
-              day: 'numeric',               // e.g., 10
-              hour: '2-digit',
-              minute: '2-digit',
-              second: '2-digit',
-              hour12: true,
-              timeZoneName: 'short'         // e.g., EDT or EST
-            };
-            const timeString = new Intl.DateTimeFormat('en-US', options).format(new Date());
-            document.getElementById('time-display').textContent = timeString;
-          }
+            <h3>Time zone</h3>
+            <p id="time-display">Loading...</p>
+          </div>
+          <script>
+            function updateTime() {
+              const options = { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+              const timeString = new Intl.DateTimeFormat('en-US', options).format(new Date());
+              document.getElementById('time-display').textContent = `${timeString} EST`;
+            }
         
-          setInterval(updateTime, 1000);
-          updateTime();
-        </script>
+            setInterval(updateTime, 1000);
+            updateTime();
+          </script>
           </div>
       <div class="block blog-block" style="flex: 1; margin-left: 0.5rem;">
         <h4>Blog</h4>

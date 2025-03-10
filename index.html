@@ -78,19 +78,38 @@
     <div class="flex-container">
       <div class="block map-block" style="flex: 1; margin-right: 0.5rem;">
         <div class="time-block">
-            <h3>Time zone</h3>
-            <p id="time-display">Loading...</p>
-          </div>
-          <script>
-            function updateTime() {
-              const options = { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
-              const timeString = new Intl.DateTimeFormat('en-US', options).format(new Date());
-              document.getElementById('time-display').textContent = `${timeString} EST`;
-            }
+          <h3>Time zone</h3>
+          <p id="time-display">Loading...</p>
+          <p id="date-display">Loading date...</p>
+        </div>
+        <script>
+          function updateTime() {
+            // Update time
+            const timeOptions = { 
+              timeZone: 'America/New_York', 
+              hour: '2-digit', 
+              minute: '2-digit', 
+              second: '2-digit', 
+              hour12: true 
+            };
+            const timeString = new Intl.DateTimeFormat('en-US', timeOptions).format(new Date());
+            document.getElementById('time-display').textContent = `${timeString} EST`;
         
-            setInterval(updateTime, 1000);
-            updateTime();
-          </script>
+            // Update date
+            const dateOptions = { 
+              timeZone: 'America/New_York', 
+              year: 'numeric', 
+              month: 'long', 
+              day: 'numeric'
+            };
+            const dateString = new Intl.DateTimeFormat('en-US', dateOptions).format(new Date());
+            document.getElementById('date-display').textContent = dateString;
+          }
+        
+          setInterval(updateTime, 1000);
+          updateTime();
+        </script>
+        
           </div>
       <div class="block blog-block" style="flex: 1; margin-left: 0.5rem;">
         <h4>Blog</h4>

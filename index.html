@@ -103,7 +103,7 @@
     .icon {
         width: 40px;
         height: 40px;
-        background-color: #333;
+        background-color: #666;
         border-radius: 40%;
         display: flex;
         justify-content: center;
@@ -113,12 +113,12 @@
         text-decoration: none;
         box-shadow: 0px 4px 6px #444;
         transition: 0.3s ease;
-        border: 5px solid #333;
+        border: 5px solid #004080;
     }
 
     .icon:hover {
-        box-shadow: 0 0 10px 3px #004080;
-        background-color: #444;
+        box-shadow: 0 0 10px 3px #444;
+        background-color: #004080;
         transform: scale(1.2);
     }
 
@@ -131,6 +131,8 @@
     top: 0;
     z-index: 999;
 }
+
+
 
 .top-nav .container {
   display: flex;
@@ -413,7 +415,27 @@ body.dark-mode .media-mentions a:hover {
   margin-bottom: 0.7rem;
   line-height: 1.5;
 }
+.contact-info {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #004080;
+  font-size: 0.95rem;
+}
 
+.contact-info i {
+  width: 20px;
+}
+.contact-info i {
+  color: #004080;  /* icon color */
+  margin-right: 8px;
+  width: 20px;
+}
+body.dark-mode .contact-info {
+  color: #e73a46;
+}
+body.dark-mode .contact-info i {
+  color: #e73a46; /* keep red in dark mode */
+}
   </style>
 </head>
 <body>
@@ -447,9 +469,11 @@ body.dark-mode .media-mentions a:hover {
       <p class="bold">Phd Candidate</p>
       <ul>
         <li>University of Tennessee, Knoxville</li>
-        <p><i class="fas fa-envelope" style="color: #e73a46; margin-right: 8px;"></i> smeerza AT vols.utk.edu</p>
-        <p><i class="fas fa-phone" style="color: #e73a46; margin-right: 8px;"></i> 502-494-8762</p>
       </ul>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> jliu AT utk.edu</p>
+        <p><i class="fas fa-phone"></i> 865-974-4389</p>
+      </div>
       <div class="social-icons">
         <a href="mailto:smeerza@vols.utk.edu" class="icon email" title="Email"><i class="fas fa-envelope"></i></a>
         <a href="https://github.com/irfanMee" class="icon github" title="GitHub"><i class="fab fa-github"></i></a>

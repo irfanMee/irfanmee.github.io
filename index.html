@@ -62,6 +62,8 @@
       margin-top: 2rem;
       color: #004080;
       margin-bottom: 0rem;
+      scroll-margin-top: 80px;
+      text-align: center;
     }
 
     a {
@@ -436,6 +438,124 @@ body.dark-mode .contact-info {
 body.dark-mode .contact-info i {
   color: #e73a46; /* keep red in dark mode */
 }
+
+.media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;  /* <-- this is new */
+    }
+
+    .media-item {
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.2s ease;
+        max-height: 700px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .media-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .media-thumbnail, video, iframe {
+        width: 100%;
+        height: auto;
+        max-height: 82%;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    .media-content {
+    padding: 1rem;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    .media-content h3 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1rem;
+        flex-grow: 0;
+    }
+
+    .media-content p {
+      margin: 0;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    .media-content a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #004080;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .media-stack {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 0.5rem;
+        overflow: hidden;
+        }
+        .media-stack > div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        }
+        .media-stack img.media-thumbnail {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: contain;
+        flex-shrink: 0;
+        }
+
+
+    .media-content a:hover {
+      text-decoration: underline;
+    }
+
+    video {
+      width: 100%;
+      border-bottom: 1px solid #eee;
+    }
+
+    
+    .media-item {
+        background-color: #fdfdfd;
+        box-shadow: 10px 10px 5px 5px rgba(27, 27, 27, 0.15);
+      }
+
+      .media-content h3 {
+        color: #004080;
+      }
+
+      .media-content a {
+        color: #004080;
+      }
+
+      
+    body.dark-mode .media-item {
+        background-color: #2a2a2a;
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+      }
+
+    body.dark-mode  .media-content h3 {
+        color: #e73a46;
+      }
+
+    body.dark-mode  .media-content a {
+        color: #e73a46;
+      }
+
+    
   </style>
 </head>
 <body>
@@ -493,19 +613,19 @@ body.dark-mode .contact-info i {
         <h2>Research Interest</h2>
         <div class="research-grid">
           <div class="column">
-            <h3>AI Security & Privacy</h3>
+            <h3>Robust and Trustworthy AI</h3>
             <ul>
               <li>Federated Learning</li>
               <li>Differential Privacy</li>
-              <li>Adversarial Learning</li>
               <li>Machine Unlearning</li>
+              <li>Algorithmic Fairness</li>
             </ul>
       
-            <h3>Trustworthy AI</h3>
+            <h3>Responsible Content Governance</h3>
             <ul>
               <li>Creative Content Protection</li>
               <li>Generative Model Auditing</li>
-              <li>Unlearnable Examples</li>
+              <li>Watermarking</li>
               <li>Foundation Model Security</li>
             </ul>
           </div>
@@ -513,15 +633,10 @@ body.dark-mode .contact-info i {
           <div class="column">
             <h3>Smart Healthcare and Fitness</h3>
             <ul>
-              <li>Gait Analysis</li>
+              <li>Intelligent Fitness Technologies</li>
               <li>Multimodal Sensing </li>
               <li>Passive Health Tracking</li>
               <li>Early Disease Detection</li>
-            </ul>
-            <h3>Fairness in AI</h3>
-            <ul>
-                <li>Bias Exploitation</li>
-                <li>Fairness Enhancement</li>
             </ul>
           </div>
       
@@ -585,51 +700,97 @@ body.dark-mode .contact-info i {
             <p><strong>Meerza, S.I.A.</strong>, et al. “<em>Optimal Path Planning Algorithm for Swarm of Robots Using Particle Swarm Optimization Technique</em>.” IEEE ICITISEE, Yogyakarta, Indonesia, Nov 2018.</p>
           </div>
 
-          <h2 id="media">Selective Media Mentions</h2>
+          <h2 id="media">Media Mentions & Highlights</h2>
+          <div class="media-grid">
+
+            <div class="media-item">
+              <video autoplay muted loop playsinline poster="https://img.youtube.com/vi/xMYm2d9bmEA/maxresdefault.jpg">
+                <source src="https://www.youtube.com/embed/xMYm2d9bmEA?autoplay=1&mute=1" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="media-content">
+                <h3>The Art of Poison-Pilling Music</h3>
+                <p>Benn Jordan explores our HarmonyCloak method on YouTube.</p>
+                <a href="https://www.youtube.com/watch?v=xMYm2d9bmEA" target="_blank">Watch Video →</a>
+              </div>
+        
+              <video autoplay muted loop playsinline poster="https://img.youtube.com/vi/1dQytj4lQEo/maxresdefault.jpg">
+                <source src="https://www.youtube.com/embed/1dQytj4lQEo" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="media-content">
+                <h3>This Will DESTROY AI Music For GOOD</h3>
+                <p>Featured in Weaver Beats’s YouTube Channel.</p>
+                <a href="https://www.youtube.com/watch?v=1dQytj4lQEo" target="_blank">Watch Video →</a>
+              </div>
+            </div>
+        
+            <div class="media-item">
+              <img class="media-thumbnail" src="https://torchbearer.utk.edu/wp-content/uploads/sites/3/2025/04/pitch-meerza-.jpg" alt="Pitch perfect protection">
+              <div class="media-content">
+                <h3>Pitch Perfect Protection</h3>
+                <p>Featured on TorchBearer Magazine for protecting music from generative AI using HarmonyCloak.</p>
+                <a href="https://torchbearer.utk.edu/2025/05/pitch-perfect-protection/" target="_blank">Read More →</a>
+              </div>
+            </div>
+        
+            <div class="media-item">
+                <div class="media-stack">
+                    <div>
+                        <img class="media-thumbnail" src="figure/Adobe Express - file.webp" alt="Podcast">
+                        <div class="media-content">
+                            <h3>How to Poison AI Music Scrapers</h3>
+                            <p>Appeared on Kaleidoscope’s Apple Podcast discussing our poisoning method for AI.</p>
+                            <a href="https://podcasts.apple.com/us/podcast/how-to-poison-ai-music-scrapers/id1449757372?i=1000716447667" target="_blank">Listen Now →</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="media-thumbnail" src="figure/Adobe Express - file (1).webp" alt="Podcast">
+                        <div class="media-content">
+                            <h3>Protect Me!</h3>
+                            <p>Appeared on The Illiac Suite - Music and AI’s Apple Podcast discussing our HarmonyCloak method.</p>
+                            <a href="https://podcasts.apple.com/us/podcast/17-protect-me/id1691796361?i=1000676707562" target="_blank">Listen Now →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="media-item">
+                <video autoplay muted loop playsinline>
+                  <source src="figure/reel.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="media-content">
+                <h3>AI Proof your music!?</h3>
+                <p>Social Media Mentions of our work.</p>
+                <a href="https://www.instagram.com/reel/DEXwaOjR4JZ/">More Details →</a>
+            </div>
+              </div>
+          </div>
           <ul class="media-mentions">
-            <li><a href="https://www.eurekalert.org/multimedia/1071942" target="_blank">
-              <span class="pub-name">EurekAlert</span>: <em>“Pitch perfect protection”</em>, May 2025
-            </a></li>
-          
-            <li><a href="https://www.aimusicpreneur.com/ai-music-news/ai-tool-harmonycloak-musicians-ai-copying/" target="_blank">
-              <span class="pub-name">The AI Musicpreneur</span>: <em>“New AI tool HarmonyCloak shields musicians’ work from AI copying”</em>, December 2024
-            </a></li>
-          
-            <li><a href="https://www.msn.com/en-us/news/technology/new-tool-makes-songs-unlearnable-to-generative-ai/ar-AA1sNU7n" target="_blank">
-              <span class="pub-name">Microsoft Network</span>: <em>“New tool makes songs unlearnable to generative AI”</em>, October 2024
-            </a></li>
-          
-            <li><a href="https://www.futura-sciences.com/tech/breves/technologie-bonne-nouvelle-droits-artistes-harmonycloak-empoisonne-ia-proteger-musique-10143/" target="_blank">
-              <span class="pub-name">FUTURA</span>: <em>“Bonne nouvelle pour les droits des artistes: HarmonyCloak empoisonne les IA pour protéger la musique!”</em>, October 2024
-            </a></li>
-          
-            <li><a href="https://newatlas.com/ai-humanoids/harmonycloak-music-protection-ai/" target="_blank">
-              <span class="pub-name">New Atlas</span>: <em>“HarmonyCloak slips silent poison into music to corrupt AI copies”</em>, October 2024
-            </a></li>
-          
-            <li><a href="https://techxplore.com/news/2024-10-tool-songs-unlearnable-generative-ai.html#google_vignette" target="_blank">
-              <span class="pub-name">TechXplore</span>: <em>“New tool makes songs unlearnable to generative AI”</em>, October 2024
-            </a></li>
-          
-            <li><a href="https://www.ajournalofmusicalthings.com/someone-has-come-up-with-a-cloaking-device-to-fight-bogus-ai-music-its-pretty-cool/#google_vignette" target="_blank">
-              <span class="pub-name">Alan Cross’ A Journal of Musical Things</span>: <em>“Someone has come up with a cloaking device to fight bogus AI music. It’s pretty cool”</em>, October 2024
-            </a></li>
-          
-            <li><a href="https://theoutpost.ai/news-story/harmony-cloak-a-new-tool-to-protect-musicians-from-ai-copyright-infringement-7477/" target="_blank">
-              <span class="pub-name">The Outpost</span>: <em>“HarmonyCloak: A New Tool to Protect Musicians from AI Copyright Infringement”</em>, October 2024
-            </a></li>
-          
-            <li><a href="https://ainvergo.com/innovative-ai-solution-to-safeguard-music-from-unauthorized-scraping-by-generative-ai-platforms/" target="_blank">
-              <span class="pub-name">Ainvergo</span>: <em>“HarmonyCloak: Innovative AI Solution to Safeguard Music from Unauthorized Scraping by Generative AI Platforms”</em>, October 2024
-            </a></li>
-          
-            <li><a href="https://pdm.com.co/nueva-herramienta-hace-que-las-canciones-no-sean-faciles-de-aprender-para-la-ia/#google_vignette" target="_blank">
-              <span class="pub-name">Tecnología</span>: <em>“Herramienta dificulta a la IA entrenarse con canciones”</em>, October 2024
-            </a></li>
-          
-            <li><a href="https://knowridge.com/2024/10/new-tech-makes-songs-invisible-to-ai-protecting-artists-from-copycats/" target="_blank">
-              <span class="pub-name">Knowledge</span>: <em>“New tech makes songs invisible to AI, protecting artists from copycats”</em>, October 2024
-            </a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/how-to-poison-ai-music-scrapers/id1449757372?i=1000716447667" target="_blank">
+                Jul. 2025 <strong>how to poison AI music scrapers</strong> — killswitch@kaleidoscope (Apple Podcast)</a></li>
+            <li><a href="https://www.eurekalert.org/multimedia/1071942" target="_blank">May. 2025 <strong>Pitch perfect protection.</strong> <em>EurekAlert</em></a></li>
+            <li><a href="https://www.youtube.com/watch?v=xMYm2d9bmEA" target="_blank">
+                  Apr. 2025 <strong>The Art Of Poison-Pilling Music Files.</strong> Benn Jordan (YouTube) <strong>(615k Views)</strong></a></li>
+            <li><a target="_blank">Dec. 2024 <strong>You can’t hear it, but University of Tennessee tool 'cloaks' songs to protect music from AI</strong> <em>Knox News</em></a></li>
+            <li><a href="https://www.aimusicpreneur.com/ai-music-news/ai-tool-harmonycloak-musicians-ai-copying/" target="_blank">Dec. 2024 <strong>New AI tool HarmonyCloak shields musicians’ work from AI copying</strong> <em>The AI Musicpreneur</em></a></li>
+            <li><a href="https://www.msn.com/en-us/news/technology/new-tool-makes-songs-unlearnable-to-generative-ai/ar-AA1sNU7n" target="_blank">Oct. 2024 <strong>New tool makes songs unlearnable to generative AI</strong> <em>Microsoft Network</em></a></li>
+            <li><a href="https://www.futura-sciences.com/tech/breves/technologie-bonne-nouvelle-droits-artistes-harmonycloak-empoisonne-ia-proteger-musique-10143/" target="_blank">Oct. 2024 <strong>Bonne nouvelle pour les droits des artistes: HarmonyCloak empoisonne les IA pour protéger la musique!</strong> <em>FURTURA</em></a></li>
+            <li><a href="https://newatlas.com/ai-humanoids/harmonycloak-music-protection-ai/" target="_blank">Oct. 2024 <strong>HarmonyCloak slips silent poison into music to corrupt AI copies</strong> <em>New Atlas</em></a></li>
+            <li><a href="https://techxplore.com/news/2024-10-tool-songs-unlearnable-generative-ai.html#google_vignette" target="_blank">Oct. 2024 <strong>New tool makes songs unlearnable to generative AI</strong> <em>TechXplore</em></a></li>
+            <li><a href="https://www.ajournalofmusicalthings.com/someone-has-come-up-with-a-cloaking-device-to-fight-bogus-ai-music-its-pretty-cool/#google_vignette" target="_blank">Oct. 2024 <strong>Someone has come up with a cloaking device to fight bogus AI music. It’s pretty cool</strong> <em>Alan Cross’ A Journal of Musical Things</em></a></li>
+            <li><a href="https://theoutpost.ai/news-story/harmony-cloak-a-new-tool-to-protect-musicians-from-ai-copyright-infringement-7477/" target="_blank">Oct. 2024 <strong>HarmonyCloak: A New Tool to Protect Musicians from AI Copyright Infringement</strong> <em>The Outpost</em></a></li>
+            <li><a href="https://ainvergo.com/innovative-ai-solution-to-safeguard-music-from-unauthorized-scraping-by-generative-ai-platforms/" target="_blank">Oct. 2024 <strong>HarmonyCloak: Innovative AI Solution to Safeguard Music from Unauthorized Scraping by Generative AI Platforms</strong> <em>Ainvergo</em></a></li>
+            <li><a href="https://pdm.com.co/nueva-herramienta-hace-que-las-canciones-no-sean-faciles-de-aprender-para-la-ia/#google_vignette" target="_blank">Oct. 2024 <strong>Herramienta dificulta a la IA entrenarse con canciones</strong> <em>Tecnología</em></a></li>
+            <li><a href="https://knowridge.com/2024/10/new-tech-makes-songs-invisible-to-ai-protecting-artists-from-copycats/" target="_blank">Oct. 2024 <strong>New tech makes songs invisible to AI, protecting artists from copycats</strong> <em>Knowledge</em></a></li>
+            <li><a href="https://ndd.news/proteger-sa-musique-des-ia-cest-possible/" target="_blank">Oct. 2024 <strong>Protéger sa musique des IA, c’est possible!</strong> <em>NDD.news</em></a></li>
+            <li><a href="https://www.eecs.utk.edu/lius-tool-makes-songs-unlearnable-ai/" target="_blank">Oct. 2024 <strong>Liu’s New Tool Makes Songs Unlearnable to Generative AI</strong> <em>UTK News</em></a></li>
+            <li><a href="https://en.softonic.com/articles/this-app-is-saving-musicians-by-poisoning-the-ai-so-it-stops-stealing-music" target="_blank">Oct. 2024 <strong>This app is saving musicians by poisoning the AI so it stops stealing music</strong> <em>Softonic</em></a></li>
+            <li><a href="https://www.projectreylo.com/post/harmonycloak-the-silent-savior-against-ai-music-theft?fbclid=IwY2xjawGMw2BleHRuA2FlbQIxMQABHbH6vPhDzPaR-6UVYy7O7zSZM_0E6KfGwiGGN9-7wjc1fUUBqRs2DrUiWw_aem_4kCVXo51pNvqa564SYGIYA" target="_blank">Oct. 2024 <strong>HarmonyCloak: The Silent Savior Against AI Music Theft</strong> <em>ProjectREYLO</em></a></li>
+            <li><a href="https://wwwhatsnew.com/2024/10/25/harmonycloak-proteccion-musical-contra-la-ia-generativa/" target="_blank">Oct. 2024 <strong>HarmonyCloak: Protección musical contra La Ia Generativa</strong> <em>WWWHATSNEWS</em></a></li>
+            <li><a href="https://ndd.news/proteger-sa-musique-des-ia-cest-possible/" target="_blank">Oct. 2024 <strong>Musique: les artistes vont pouvoir ‘empoisonner’ leurs œuvres pour que les algorithmes ne puissent plus s’en inspirer</strong> <em>Francetvinfo</em></a></li>
+            <li><a href="https://mischadohler.com/harmony-unleashed-ais-musical-revolution-silenced/" target="_blank">Oct. 2024 <strong>Harmony Unleashed: AI’s Musical Revolution Silenced</strong> <em>Mischa Dohler</em></a></li>
           </ul>
 
           <h2 id="news">Latest News</h2>
